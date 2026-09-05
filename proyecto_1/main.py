@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field   #es una forma de poder modelar los datos
 
 
 #antes de cargar la app cargar el bundle
-NOMBRE_BUNDLE = r'modelo_demanda.joblib'   #copiar ruta de acceso relativa
+NOMBRE_BUNDLE = r'modelo_bundle_e_cardiaca.pkl'   #copiar ruta de acceso relativa
 
 estado_de_servicio = {'bundle': None}     #se crea la variable en diccionario que va a estar vacio
 
