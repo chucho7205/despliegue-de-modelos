@@ -5,11 +5,11 @@ import joblib   #para cargar la libreria del bundle
 import pandas as pd   #se van a hacer las mismas tranformaciones que se hicieron en la prueba
 from fastapi import FastAPI, HTTPException   
 from pydantic import BaseModel, Field   
-from proyecto_2.inferencia import pronosticar
-from proyecto_2.esquema import  SolicitudPronostico
+from inferencia import pronosticar
+from esquema import  SolicitudPronostico
 
 #antes de cargar la app cargar el bundle
-NOMBRE_BUNDLE = r'C:\Users\chuch\Documents\espy\Despliegue y Producción de Modelos de Machine Learning\proyecto_2\modelo_demanda.joblib'   
+NOMBRE_BUNDLE = r'modelo_demanda.joblib'   
 
 estado_de_servicio = {'bundle': None}     #se crea la variable en diccionario que va a estar vacio
 
